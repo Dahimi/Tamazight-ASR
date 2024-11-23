@@ -1,0 +1,10 @@
+stages:
+  text_audio_dataset:
+    cmd: python tamazight_asr/src/data_preparation/text_audio_dataset.py
+    deps:
+    - tamazight_asr/data/videos/
+    - tamazight_asr/data/srt/
+    - tamazight_asr/src/data_preparation/
+    outs:
+    - tamazight_asr/data /dataset.csv
+    - tamazight_asr/data/audios/

@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  text_audio_dataset:
+    cmd: python tamazight_asr/src/data_preparation/text_audio_dataset.py
+    deps:
+    - path: tamazight_asr/data/srt/
+      hash: md5
+      md5: e76a8ae88e7df8bcd9716d90e4f202f9.dir
+      size: 28239
+      nfiles: 1
+    - path: tamazight_asr/data/videos/
+      hash: md5
+      md5: e83be8adc054438a7c99c264f0ac089e.dir
+      size: 90372803
+      nfiles: 1
+    - path: tamazight_asr/src/data_preparation/
+      hash: md5
+      md5: cc594037e05d9249061e9340d9acd475.dir
+      size: 7628
+      nfiles: 2
+    outs:
+    - path: tamazight_asr/data/audios/
+      hash: md5
+      md5: b865aca585f135bbdc0ad04e0753aa68.dir
+      size: 149733140
+      nfiles: 310
+    - path: tamazight_asr/data/dataset.csv
+      hash: md5
+      md5: 515fd1a6b9ea460167b5fc169ba7947d
+      size: 54207
