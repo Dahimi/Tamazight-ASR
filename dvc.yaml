@@ -6,5 +6,5 @@ stages:
     - tamazight_asr/data/srt/
     - tamazight_asr/src/data_preparation/
     outs:
-    - tamazight_asr/data /dataset.csv
+    - tamazight_asr/data/dataset.csv
     - tamazight_asr/data/audios/
