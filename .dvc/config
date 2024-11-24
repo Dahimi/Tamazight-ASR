@@ -1,5 +1,5 @@
 [core]
-    remote = local_remote
+    remote = azure_remote
 ['remote "azure_remote"']
     url = azure://tamazight-data
 ['remote "local_remote"']
